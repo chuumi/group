@@ -1,0 +1,448 @@
+﻿@import url('https://fonts.cdnfonts.com/css/strange-piece');
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Jackeyfont";
+  src: url("../fonts/jackeyfont.woff");
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 50%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: "MS Sans Serif";
+  letter-spacing: 0.001em;
+  font-size: 14px;
+  font-smooth: none;
+  width: 100vw;
+}
+
+#main {
+  z-index: 3;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.window-actions{
+  margin-top: 0.5rem;
+}
+
+.title-bar-controls button[aria-label="Close"] {
+  margin-right: 0.05rem;
+}
+
+#enter {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  cursor: pointer;
+  position: fixed;
+  text-align: center;
+  background-color: #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.window {
+	border: 2px solid #7c7c7c;
+	border-top-color: #fff;
+	border-bottom-color: #131313;
+	border-left-color: #fff;
+	background: #c0c0c0;
+	width: 90%;
+	max-width: 500px;
+	position: absolute;
+	top: 50% ;
+	left: 50% ;
+  box-shadow: inset 2px 2px #ffffff00 !important;
+  padding: 1px !important;
+}
+
+.window .window-toolbar {
+	background: linear-gradient(90deg,navy,#1084d0);
+	color: #fff;
+	padding: 4px;
+	font-weight: bold;
+}
+
+.window .window-buttons {
+	position: absolute;
+	right: 4px;
+	top: 4.6px;
+}
+
+.window .window-buttons .window-button {
+	background: no-repeat center #ccc;
+	border: 2px solid #7c7c7c;
+	border-top-color: #fff;
+	border-left-color: #fff;
+	height: 17px;
+	width: 17px;
+	float: right;
+	margin-left: 2px;
+}
+
+.window .window-buttons .window-button.close {
+	background-image: url(../images/close-icon.png);
+}
+
+.window .window-buttons .window-button.help {
+	background-image: url(../images/question-icon.png);
+}
+
+.window .window-tabs {
+	overflow: hidden;
+	padding-top: 2px;
+}
+
+.window .window-wrapper {
+	padding: 10px;
+  margin-bottom: -0.14rem;
+}
+
+#desktop {
+  background-color: rgb(0, 0, 0);
+  /* background-image:url(../images/topography.svg); */
+  background-image: url(../images/bg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  z-index: -300;
+}
+
+#toolbar {
+  background: #c0c0c0;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid #fff;
+}
+
+#toolbar .toolbar-start-menu {
+  float: left;
+}
+
+#toolbar .toolbar-start-menu .start-button {
+  background: url(../images/icon.gif) no-repeat 2px center / 24px;
+  padding-left: 28px;
+  padding-right: 5px;
+  height: 29px;
+  margin: 3px 3px;
+  font-weight: bold;
+  border: 2px solid #7c7c7c;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+
+#toolbar .toolbar-start-menu .start-button:hover {
+  background-color: #a7a7a7;
+}
+
+#toolbar .toolbar-start-menu .start-menu-wrapper {
+  border: 2px solid #7c7c7c;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  background: #c0c0c0;
+  position: fixed;
+  left: 2px;
+  bottom: 33px;
+  width: 190px;
+  min-height: 200px;
+}
+
+#toolbar .toolbar-start-menu .start-menu-wrapper .start-menu-title {
+  height: 100%;
+  padding: 5px 5px;
+  background: linear-gradient(90deg, #00007b 0%, #00f 5%, #00007b 100%);
+  color: #fff;
+  width: 40px;
+  float: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+}
+
+#toolbar .toolbar-start-menu .start-menu-wrapper .start-menu-title span {
+  transform: rotate(-90deg);
+  transform-origin: left 0;
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+}
+
+#toolbar .toolbar-start-menu .start-menu-wrapper .start-menu {
+  margin-left: 40px;
+}
+
+#toolbar .toolbar-separator {
+  width: 2px;
+  height: 26px;
+  margin-top: 4px;
+  background: #797979;
+  float: left;
+  border-right: 1px solid #fff;
+}
+
+#toolbar .toolbar-left {
+  float: left;
+  padding: 0 5px;
+  min-width: 50px;
+  margin-top: 1px;
+}
+
+
+#toolbar .toolbar-icon {
+  background: no-repeat center / auto 20px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin-top: 3px;
+  margin: 3px 3px;
+  float: left;
+}
+
+#toolbar .toolbar-icon.ie {
+  min-width: 70px !important;
+  background-image: url(../images/lina.jpeg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  z-index: 100 !important;
+}
+
+#toolbar .toolbar-right {
+  float: right;
+  margin: 2px 3px;
+  height: 29px;
+  border: 2px solid #7c7c7c;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+}
+
+#toolbar .toolbar-right .time {
+  padding: 6px 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.desktop-icons .desktop-icon {
+  width: 90px;
+  height: 80px;
+  color: #fff;
+  filter: drop-shadow(0px 1.5px 1.5px rgba(0, 0, 0, 0.5));
+  text-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background: no-repeat center top;
+  padding-top: 55px;
+  margin-top: 5px;
+}
+
+.desktop-icons .desktop-icon.lina {
+  background-image: url(../images/lina.jpeg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons .desktop-icon.ben {
+  background-image: url(../images/ben.jpeg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons .desktop-icon.david {
+  background-image: url(../images/david.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons .desktop-icon.kai {
+  background-image: url(../images/kai.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons .desktop-icon.indica {
+  background-image: url(../images/indica.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons .desktop-icon.mel {
+  background-image: url(../images/mel.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons-2 .desktop-icon {
+  width: 90px;
+  height: 80px;
+  color: #fff;
+  filter: drop-shadow(0px 1.5px 1.5px rgba(0, 0, 0, 0.5));
+  text-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background: no-repeat center top;
+  padding-top: 55px;
+  margin-top: 5px;
+}
+
+.desktop-icons-2 .desktop-icon.brax {
+  background-image: url(../images/brax.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons-2 .desktop-icon.azra {
+  background-image: url(../images/azra.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.custom-button {
+  border: none !important;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1rem !important;
+  font-family: "VCR OSD Mono", sans-serif !important;
+  /* font-weight: 500; */
+}
+
+h3{
+  font-size:1rem !important;
+  cursor: pointer;
+}
+
+.img-shiz {
+  position: absolute;
+  bottom: 28px;
+  left: 4px;
+  opacity: 50%;
+  display:none;
+}
+
+.responsive-image {
+  max-width: auto;
+  height: 500px;
+}
+
+
+.draggable {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.enter-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #enter {
+      background-color: #000000;
+      z-index: 1;
+      overflow: hidden;
+  }
+
+  #desktop {
+      background-color: #000000 !important;
+      background-image: none;
+      z-index: 1;
+      overflow: hidden;
+  }
+  .img-shiz {
+    display:block;
+    opacity: 100%;
+  }
+  .responsive-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 2px;
+    font-family: "VCR OSD Mono", sans-serif;
+  }
+  .enter-screen {
+      width: 300px;
+  }
+  /* .desktop-icons{
+    transform: scale(0.92);
+    transform-origin: top left;
+  } */
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+.volume {
+  position: fixed;
+  bottom: 34.5px;
+  right: 0;
+  z-index: -5;
+}
+
+.status-bar {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-bar-field {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  line-height: 22px !important;
+  display: inline-block;
+}
