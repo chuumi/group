@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta property="og:url" content="null">
+  <meta property="og:title" content="null">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="null">
+  <meta property="og:image" content="images/icon.gif">
+
+  <link rel="preload" href="css/desktop.css" as="style">
+
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/98.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <!-- <link href="css/vcr-osd-mono" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/all.css">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/audio.js"></script>
+
+  <title></title>
+  <meta name="theme-color" content="#000">
+
+  <link rel="icon" href="images/icon.gif" type="image/gif">
+  <!-- <script>document.addEventListener('contextmenu', event => event.preventDefault());</script> -->
+
+  <style>
+    h4 {
+      background: url(images/bg.gif);
+      color: #fff;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    
+    }
+
+    body {
+      user-select: none;
+      -moz-user-select: none;
+      background-color: black;
+      /* animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; */
+    }
+
+    /* @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    } */
+  </style>
+</head>
+
+<body>
+  <script>
+    $(function () {
+      $(".draggable").draggable({
+        start: function () {
+          $(this).css({ transform: "none", top: $(this).offset().top + "px", left: $(this).offset().left + "px" });
+        }
+      });
+    });
+  </script>
+  <div id="enter">
+    <div class="window enter-screen">
+      <div class="title-bar">
+        <div class="title-bar-text">Welcome To Windows</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-wrapper">
+        <div class="window-content">
+          <form>
+            <fieldset>
+              
+                <div style="color: black;">
+                  <p style="margin-bottom: 0.5rem;">Type any username and password to enter Windows.</p>
+                  <div class="field-row">
+                    <label for="username">Username</label>
+                    <input x-ref="username" style="margin-left: 0.95rem;width: 11.05rem;" id="username" type="text">
+                  </div>
+                  <div class="field-row">
+                    <label for="password">Password</label>
+                    <input x-ref="password" style="margin-left: 1rem;width: 11.05rem;" id="password" type="password">
+                  </div>
+                </div>
+              
+            </fieldset></form>
+          
+        </div>
+
+        <div class="window-actions">
+          <button class="window-action-button main">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <div id="desktop">
+      </br></br>
+      
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <style>
+        /* Apply background image to the body */
+        body {
+          background-image: url("images/bg.gif");
+          background-size: cover; /* Cover the entire viewport */
+          background-position: center; /* Center the image */
+          background-attachment: fixed; /* Fixed position */
+          margin: 0; /* Remove default body margin */
+          padding: 0; /* Remove default body padding */
+        }
+      </style>
+      </head>
+      </body>
+      </html>
+      
+
+      <div class="row">
+        <div class="desktop-icons">
+          <div class="desktop-icon lina no-border" onclick="showPopup('lpop')" title="lina">
+            lina
+          </div>
+
+          <div class="desktop-icon ben no-border" onclick="showPopup('bpop')" title="ben">
+            ben
+          </div>
+
+          <div class="desktop-icon david no-border" onclick="showPopup('dpop')" title="david">
+            david
+          </div>
+
+          <div class="desktop-icon kai no-border" onclick="showPopup('kpop')" title="kai">
+            kai
+          </div>
+
+          <div class="desktop-icon indica no-border" onclick="showPopup('ipop')" title="indica">
+            indica
+          </div>
+
+          <div class="desktop-icon mel no-border" onclick="showPopup('mpop')" title="mel">
+            mel
+          </div>
+        </div>
+
+
+        <div class="desktop-icons-2">
+          <div class="desktop-icon azra no-border" onclick="showPopup('apop')" title="azra">
+            azra
+          </div>
+
+          <div class="desktop-icons-2">
+            <div class="desktop-icon brax no-border" onclick="showPopup('brpop')" title="brax">
+              brax
+            </div>
+
+          </div>
+
+        <div id="toolbar">
+          <div class="toolbar-start-menu">
+            <a href="https://miu.lol"><button class="start-button">Start</button></a>
+
+          </div>
+          <div class="toolbar-separator"></div>
+
+
+          <div class="toolbar-left">
+            <button class="toolbar-icon ie" onclick="showPopup('lpop')"></button>
+            <div class="window draggable" id="lpop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <div class="title-bar">
+                <div class="title-bar-text">lina</div>
+                <div class="title-bar-controls">
+                  <button class="lclose" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <center>
+                  <img src="images/lina.jpeg" height="48px" width="48px">
+                  <p>&gt; <a target="_blank" href="https://www.instagram.com/swagcat26">insta</a><br>
+                     &gt; <a target="_blank" href="https://twitter.com/seihin">twitter</a><br>
+                     &gt; <a target="_blank" href="https://tiktok.com/@swagcat23">tiktok</a><br>
+                  </p>
+                  <section class="field-row" style="justify-content: center">
+                    <button class="lok" aria-label="OK" style="margin-top:10px;">OK</button>
+                  </section>
+                </center>
+              </div>
+              
+
+            </div>
+            <div class="window draggable" id="bpop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <div class="title-bar">
+                <div class="title-bar-text">ben</div>
+                <div class="title-bar-controls">
+                  <button class="bclose" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <center>
+                  <img src="images/ben.jpeg" height="48px" width="48px">
+                  <p>&gt; <a target="_blank" href="https://www.instagram.com/sentipede">insta</a><br>
+                    &gt; <a target="_blank" href="https://pinterest.com/sentipedes">pinterest</a><br>
+                  <section class="field-row" style="justify-content: center">
+                    <button class="bok" aria-label="OK" style="margin-top:10px;">OK</button>
+                  </section>
+                </center>
+              </div>
+            </div>
+
+
+            <div class="window draggable" id="dpop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <div class="title-bar">
+                <div class="title-bar-text">david</div>
+                <div class="title-bar-controls">
+                  <button class="dclose" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <center>
+                  <img src="images/david.jpg" height="48px" width="48px">
+                  <p>&gt; <a target="_blank" href="https://www.instagram.com/dav1dkimm">insta</a><br>
+                  <section class="field-row" style="justify-content: center">
+                    <button class="dok" aria-label="OK" style="margin-top:10px;">OK</button>
+                  </section>
+                </center>
+              </div>
+            </div>
+
+
+            <div class="window draggable" id="kpop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <div class="title-bar">
+                <div class="title-bar-text">kai</div>
+                <div class="title-bar-controls">
+                  <button class="kclose" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <center>
+                  <img src="images/kai.jpg" height="48px" width="48px">
+                  <p>&gt; <a target="_blank" href="https://www.instagram.com/duul">insta</a><br>
+                  </p>
+                  <section class="field-row" style="justify-content: center">
+                    <button class="kok" aria-label="OK" style="margin-top:10px;">OK</button>
+                  </section>
+                </center>
+              </div>
+            </div>
+
+
+            <div class="window draggable" id="ipop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <div class="title-bar">
+                <div class="title-bar-text">indica</div>
+                <div class="title-bar-controls">
+                  <button class="iclose" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <center>
+                  <img src="images/indica.jpg" height="48px" width="48px">
+                  <p>&gt; <a target="_blank" href="https://www.instagram.com/wuvija">insta</a><br>
+                  <section class="field-row" style="justify-content: center">
+                    <button class="iok" aria-label="OK" style="margin-top:10px;">OK</button>
+                  </section>
+                </center>
+              </div>
+            </div>
+
+
+            <div class="window draggable" id="mpop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <div class="title-bar">
+                <div class="title-bar-text">mel</div>
+                <div class="title-bar-controls">
+                  <button class="mclose" aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <center>
+                  <img src="images/mel.jpg" height="48px" width="48px">
+                  <p>&gt; <a target="_blank" href="https://www.instagram.com/k1llmel">insta</a><br>
+                  <section class="field-row" style="justify-content: center">
+                    <button class="mok" aria-label="OK" style="margin-top:10px;">OK</button>
+                  </section>
+                </center>
+              </div>
+          </div>
+
+
+          <div class="window draggable" id="apop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <div class="title-bar">
+              <div class="title-bar-text">azra</div>
+              <div class="title-bar-controls">
+                <button class="aclose" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <center>
+                <img src="images/azra.jpg" height="48px" width="48px">
+                <p>&gt; <a target="_blank" href="https://www.instagram.com/forgivenblade">insta</a><br>
+                <section class="field-row" style="justify-content: center">
+                  <button class="aok" aria-label="OK" style="margin-top:10px;">OK</button>
+                </section>
+              </center>
+            </div>
+        </div>
+
+
+        <div class="window draggable" id="brpop" style="margin: 32px; width: 250px; display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="title-bar">
+            <div class="title-bar-text">brax</div>
+            <div class="title-bar-controls">
+              <button class="brclose" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <center>
+              <img src="images/brax.jpg" height="48px" width="48px">
+              <p>&gt; <a target="_blank" href="https://www.instagram.com/d6stopia">insta</a><br>
+              <section class="field-row" style="justify-content: center">
+                <button class="bok" aria-label="OK" style="margin-top:10px;">OK</button>
+              </section>
+            </center>
+          </div>
+      </div>
+
+
+          <audio id="audio" preload="none" tabindex="0" loop="">
+            <source src="media/howufeel.mp3" data-track-number="1">
+          </audio>
+
+          <ul id="trackList" style="display: none;">
+            <li data-track-number="1">1</li>
+          </ul>
+
+          <div class="window volume" id="volume" style="position: fixed; width: 200px; display: none;">
+            <div class="title-bar">
+              <div class="title-bar-text">Volume</div>
+            </div>
+            <div class="window-body">
+              <p>Currently Playing:</p>
+              <ul id="songInfo">
+                <li id="songTitle">how u feel?</li>
+                <li id="songTime">0:00</li>
+                <li><input id="range26" type="range" min="0" max="50" value="50" /></li>
+              </ul>
+            </div>
+            <div class="status-bar">
+              <p id="backward" class="status-bar-field fa-solid fa-backward"></p>
+              <p id="pause" class="status-bar-field fa-solid fa-pause"></p>
+              <p id="forward" class="status-bar-field fa-solid fa-forward"></p>
+            </div>
+  
+  </body>
+  
+  </html>
