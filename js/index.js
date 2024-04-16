@@ -34,13 +34,15 @@ function addPopupListeners(popupId, closeBtnClass, okBtnClass) {
 
 document.addEventListener("DOMContentLoaded", function () {
   addPopupListeners("lpop", "lclose", "lok");
-  addPopupListeners("bpop", "bclose", "bok");
+  addPopupListeners("ashpop", "ashclose", "ashok");
   addPopupListeners("dpop", "dclose", "dok");
   addPopupListeners("ipop", "iclose", "iok");
   addPopupListeners("mpop", "mclose", "mok");
   addPopupListeners("kpop", "kclose", "kok");
   addPopupListeners("apop", "aclose", "aok");
   addPopupListeners("brpop", "brclose", "brok");
+  addPopupListeners("cpop", "cclose", "cok");
+
   // Assuming the "free" class is used for multiple popups
   // If not, adjust accordingly
   addPopupListeners("free", "free", "free");
