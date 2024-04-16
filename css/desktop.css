@@ -131,7 +131,7 @@ body {
 #desktop {
   background-color: rgb(0, 0, 0);
   /* background-image:url(../images/topography.svg); */
-  background-image: url(../images/bg.gif);
+  background-image: url(../images/dbg.gif);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -155,7 +155,7 @@ body {
 }
 
 #toolbar .toolbar-start-menu .start-button {
-  background: url(../images/icon.gif) no-repeat 2px center / 24px;
+  background: url(../images/start) no-repeat 2px center / 24px;
   padding-left: 28px;
   padding-right: 5px;
   height: 29px;
@@ -277,8 +277,8 @@ body {
   z-index: 100 !important;
 }
 
-.desktop-icons .desktop-icon.ben {
-  background-image: url(../images/ben.jpeg);
+.desktop-icons .desktop-icon.ash {
+  background-image: url(../images/ash.jpg);
   background-repeat: no-repeat;
   background-size: 48px 48px;
   z-index: 100 !important;
@@ -333,6 +333,13 @@ body {
 
 .desktop-icons-2 .desktop-icon.azra {
   background-image: url(../images/azra.jpg);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  z-index: 100 !important;
+}
+
+.desktop-icons-3 .desktop-icon.chaco {
+  background-image: url(../images/chaco.jpg);
   background-repeat: no-repeat;
   background-size: 48px 48px;
   z-index: 100 !important;
